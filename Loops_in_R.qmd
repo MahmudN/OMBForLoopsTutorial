@@ -1,0 +1,89 @@
+---
+title: "Loops in R"
+format: html
+editor: visual
+---
+
+# Loops
+
+Loops are control structures in programming languages that allow you to execute a block of code repeatedly. They are used when you need to perform a task multiple times, either a fixed number of times or until a certain condition is met.
+
+## For Loop
+
+**For Loop**: A for loop iterates over a sequence of values or elements and executes a block of code for each element in the sequence. It's commonly used when you know the number of iterations beforehand.
+
+```{r}
+for (i in 1:5){
+  print(i)
+  #print("Hi!")
+} 
+```
+
+In R, you can use a **`for`** loop to iterate over elements of a list, vector, matrix, or data frame.
+
+1.  **List**
+
+```{r}
+my_list <- list(a = 1, b = 2, c = 3)
+for (element in my_list) {
+  print(element)
+}
+
+```
+
+2.  **Vector**
+
+    ```{r}
+    my_vector <- c(1, 2, 3, 4, 5)
+    for (element in my_vector) {
+      print(element)
+    }
+
+    ```
+
+3.  **Matrix**
+
+    ```{r}
+    my_matrix <- matrix(1:9, nrow = 3)
+    for (element in my_matrix) {
+      print(element)
+    }
+
+    ```
+
+4.  **Data Frame**
+
+    ```{r}
+    my_df <- data.frame(A = c(1, 2, 3), B = c(4, 5, 6))
+    for (column in my_df) {
+      print(column)
+    }
+
+    ```
+
+## While Loop
+
+A **`while`** loop is a control flow statement in programming that repeatedly executes a block of code as long as a specified condition is true. The condition is evaluated before each iteration, and if it remains true, the loop continues to execute; otherwise, the loop terminates.
+
+**`while`** loops are useful when you don't know in advance how many iterations will be needed, but you know the condition that needs to be satisfied for the loop to continue. However, be cautious, as improper use of **`while`** loops can lead to infinite loops, causing your program to hang or crash. It's essential to ensure that the condition within the **`while`** loop eventually becomes false to avoid such scenarios.
+
+```{r}
+#while (condition) {
+#   Code block to be executed repeatedly
+#}
+
+```
+
+-   The **`condition`** is a logical expression that is evaluated before each iteration of the loop. If the condition evaluates to **`TRUE`**, the loop's body is executed. If it evaluates to **`FALSE`**, the loop terminates, and program control moves to the next statement after the loop.
+
+-   The code block within the curly braces **`{}`** represents the body of the loop, containing the statements that are executed repeatedly as long as the condition remains true.
+
+    ```{r}
+    i <- 1
+
+    while (i <= 5) {
+      print(i)
+      i <- i + 1
+    }
+
+    ```
