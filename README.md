@@ -4,5 +4,3 @@ In cludes Jupyter Notebook and RStudio
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MahmudN/OMBForLoopsTutorial/HEAD) 
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/MahmudN/OMBForLoopsTutorial/HEAD
