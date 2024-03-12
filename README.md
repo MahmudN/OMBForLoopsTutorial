@@ -5,3 +5,4 @@ Includes Jupyter Notebook
 TODO:
 add R Studio launcher
 <br><br>
+**Launch Jupyter: **
